@@ -113,7 +113,7 @@ const Game: React.FC = () => {
                           strokeWidth: 0.25
                         },
                         hover: {
-                          fill: gameWon ? fillColor : "#BBB",
+                          fill: isClicked ? fillColor : "#BBB",
                           outline: "none",
                           stroke: "#000",
                           strokeWidth: 0.25
