@@ -7,5 +7,8 @@ export default defineConfig({
   base: '/delawhere/',
   build: {
     outDir: 'dist',
+    emptyOutDir: true,
+    sourcemap: false,
+    minify: true,
   },
 })
