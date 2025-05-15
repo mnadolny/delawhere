@@ -16,7 +16,7 @@ interface Position {
 }
 
 // Centered more towards the middle of the East Coast, zoomed out to show more states
-const INITIAL_POSITION: Position = { coordinates: [-82, 39], zoom: 3 };
+const INITIAL_POSITION: Position = { coordinates: [-82, 39], zoom: 2 };
 
 const Game: React.FC = () => {
   const [selectedState, setSelectedState] = useState<string | null>(null);
@@ -89,7 +89,7 @@ const Game: React.FC = () => {
             center={position.coordinates}
             onMoveEnd={handleMoveEnd}
             maxZoom={12}
-            minZoom={2}
+            minZoom={1}
           >
             <Geographies geography={geoUrl}>
               {({ geographies }) =>
